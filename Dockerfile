@@ -4,7 +4,7 @@
 # # COPY package.json .
 # RUN npm install
 # CMD [ "npm", "start" ]
-FROM alpine
+FROM node:alpine3.12
 # COPY package*.json ./
 # RUN npm install
 # COPY . .
