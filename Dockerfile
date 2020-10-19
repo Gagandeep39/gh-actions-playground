@@ -4,7 +4,7 @@
 # # COPY package.json .
 # RUN npm install
 # CMD [ "npm", "start" ]
-FROM node:12
+FROM node:14
 COPY package*.json ./
 RUN npm install
 COPY . .
