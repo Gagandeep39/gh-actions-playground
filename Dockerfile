@@ -4,8 +4,8 @@
 # # COPY package.json .
 # RUN npm install
 # CMD [ "npm", "start" ]
-FROM node:12.18.1
+FROM node:10
 # COPY package*.json ./
 # RUN npm install
 # COPY . .
-CMD [ "echo", "LOL" ]
+EXPOSE 8080
