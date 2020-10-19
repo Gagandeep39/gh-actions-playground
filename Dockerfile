@@ -5,7 +5,7 @@
 # RUN npm install
 # CMD [ "npm", "start" ]
 FROM node:14
-COPY package*.json ./
-RUN npm install
-COPY . .
-CMD [ "node", "index.js" ]
+# COPY package*.json ./
+# RUN npm install
+# COPY . .
+CMD [ "echo", "LOL" ]
